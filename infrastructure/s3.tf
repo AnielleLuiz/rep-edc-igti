@@ -1,7 +1,6 @@
 resource "aws_s3_bucket" "dl" {
   bucket = "datalake-igti-edc-anielle-tf"
-  acl    = "private"
-
+  
   tags = {
     IES   = "IGTI",
     CURSO = "EDC"
@@ -19,8 +18,7 @@ resource "aws_s3_bucket" "dl" {
 
 resource "aws_s3_bucket" "stream" {
   bucket = "igti-anielle-streaming-bucket"
-  acl    = "private"
-
+  
   tags = {
     IES   = "IGTI",
     CURSO = "EDC"
