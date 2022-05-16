@@ -4,7 +4,7 @@ import pandas as pd
 # Criar um cliente para interagir com o AWS S3
 s3_client = boto3.client('s3')
 
-s3_client.download_file("datalake-ney-igti-edc",
+s3_client.download_file("datalake-ney-igti-edcc",
                         "data/dimensao_mesorregioes_mg.csv",
                         "data/dimensao_mesorregioes_mg.csv")
 
