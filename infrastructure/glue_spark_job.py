@@ -31,6 +31,5 @@ enem = (
     .write
     .mode("overwrite")
     .format("parquet")
-    .partitionBy("year")
     .save("s3://dl-igti-edc-anielle/staging/enem")
 )
