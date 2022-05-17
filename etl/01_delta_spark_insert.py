@@ -28,6 +28,5 @@ print("Writing delta table...")
     .write
     .mode("overwrite")
     .format("delta")
-    .partitionBy("year")
-    .save("s3://dl-igti-edc-anielle/staging-zone/enem")
+    .save("s3://datalake-igti-edc-anielle-tf/staging-zone/enem")
 )
