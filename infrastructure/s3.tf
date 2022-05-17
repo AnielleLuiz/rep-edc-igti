@@ -17,7 +17,7 @@ resource "aws_s3_bucket" "dl" {
 
 
 resource "aws_s3_bucket" "stream" {
-  bucket = "igti-anielle-streaming-bucket"
+  bucket = "igti-ani-streaming-bucket"
   
   tags = {
     IES   = "IGTI",
